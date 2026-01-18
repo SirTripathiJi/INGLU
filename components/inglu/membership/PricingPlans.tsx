@@ -3,9 +3,9 @@ import { Check } from 'lucide-react';
 
 export function PricingPlans() {
     const plans = [
-        { name: "Monthly", price: "49", emoji: "🌟", color: "from-[#E9B3FB] to-[#B19CD9]" },
-        { name: "Quarterly", price: "149", emoji: "🚀", color: "from-[#6F00FF] to-[#9400FF]", recommended: true },
-        { name: "Yearly", price: "499", emoji: "👑", color: "from-[#FF204E] to-[#FF5757]" },
+        { name: "Monthly", price: "49", color: "from-[#E9B3FB] to-[#B19CD9]" },
+        { name: "Quarterly", price: "149", color: "from-[#6F00FF] to-[#9400FF]", recommended: true },
+        { name: "Yearly", price: "499", color: "from-[#FF204E] to-[#FF5757]" },
     ];
 
     return (
@@ -27,7 +27,6 @@ export function PricingPlans() {
                             )}
 
                             <div className="text-center mb-8">
-                                <span className="text-4xl mb-4 block">{plan.emoji}</span>
                                 <h3 className="text-2xl font-bold text-white uppercase tracking-wide mb-2">{plan.name}</h3>
                                 <div className="text-5xl font-black text-white mb-2">
                                     ₹{plan.price}
